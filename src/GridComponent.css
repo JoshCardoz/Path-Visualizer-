@@ -1,0 +1,65 @@
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.grid-row {
+    display: flex;
+    gap: 2px;
+}
+
+.grid-cell {
+    width: 20px;
+    height: 20px;
+    background-color: #f1f3f4; 
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    border: 1px solid #b0b0b0;  
+}
+
+.grid-cell.selected {
+    background-color: #005f99;
+}
+
+.grid-cell.visited {
+    background-color: #ffa62b;
+}
+
+.grid-cell.start {
+    background-color: #34a065;
+}
+
+.grid-cell.end {
+    background-color: #c70000;
+}
+
+.grid-cell.path {
+    background-color: #1e1e1e;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #4a4a4a;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #6a6a6a;
+    transform: scale(1.05);
+}
+.button-container {
+    display: flex;
+    align-items: center;  
+    gap: 10px;  
+}
+
+.reset-button {
+    margin-left: auto;  
+}
+
